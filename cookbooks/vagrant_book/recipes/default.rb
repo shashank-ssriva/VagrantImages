@@ -1,0 +1,5 @@
+execute "apt-get update"
+package "haproxy"
+package "nfs-kernel-server"
+package "nfs-common"
+execute "service nfs-kernel-server start"
