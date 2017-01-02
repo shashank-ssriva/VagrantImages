@@ -21,8 +21,16 @@ package 'nfs-kernel-server' do
   action :install
 end
 
+execute "mkdir -p /home/vagrant/nfs-artifacts"
+
+cookbook_file "/etc/exports" do
+  source "exports"
+end
+
+execute "exportfs -v"
+
 service 'nfs-kernel-server' do
-  action [ :enable, :start ]
+  action [ :enable, :restart ]
 end
 
 package 'nfs-common' do
