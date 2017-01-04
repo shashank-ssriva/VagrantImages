@@ -24,4 +24,4 @@ Vagrant will throw below error if your vagrant version is < 1.8.4.
 ==> default: The server returned a HTTP 404. This usually indicates that your chef_server_url is incorrect.
 ```
 
-To fix, it remove your old installation of vagrant using <code>rm -rf /opt/vagrant</code> & <code>rm -rf /usr/local/bin/vagrant</code> commands. Afterwards, install the latest version. I have tested it on my current version of 1.8.4.
+To fix it, remove your old installation of vagrant using <code>rm -rf /opt/vagrant</code> & <code>rm -rf /usr/local/bin/vagrant</code> commands. Afterwards, install the latest version. I have tested it on my current version of 1.8.4.
