@@ -25,3 +25,9 @@ Vagrant will throw below error if your vagrant version is < 1.8.4.
 ```
 
 To fix it, remove your old installation of vagrant using <code>rm -rf /opt/vagrant</code> & <code>rm -rf /usr/local/bin/vagrant</code> commands. Afterwards, install the latest version. I have tested it on my current version of 1.8.4.
+
+### NFS Client Settings : -
+Create any directory (you will put this directory under Location property in XLR conf files.
+Now issue below command to mount the NFS share. Ofcourse, change the location to the new directory you just created ;-)
+
+<code>mount -t nfs 10.10.50.10:/home/shashank/nfs-artifacts /home/shashank/nfs-share/</code>
