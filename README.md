@@ -4,6 +4,7 @@ A very simple Vagrant box that hosts both HAProxy & NFS to be used by XL-Release
 1. Download the zipped file on your machine, <code>cd</code> into that directory, remove the Vagrantfile & then issue <code> vagrant init</code> command. This will create a .vagrant directory inside this parent directory & initialise vagrant.
 2. Copy back the Vagrantfile from this repository to your current directory. Then issue <code>vagrant up</code> command which will download the Ubuntu 14.04 basebox, start it & then call Chef script that will setup HAProxy alongwith NFS.
 3. Now issue <code>vagrant ssh</code> command to check the newly built box.
+4. You may also create a new .vagrant directory inside the parent directory & issue <code>vagrant up</code> to start it off.
 
 ### Caveats : -
 Edit the haproxy.cfg & /etc/exports file to reflect your own XLR setup, like host names, IP addresses & directory names.
