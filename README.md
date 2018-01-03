@@ -1,5 +1,6 @@
 # VagrantImages
 A very simple Vagrant box that hosts both HAProxy & NFS to be used by XL-Release :-)
+
 ## To launch this box, follow below steps : -
 1. Download the zipped file on your machine, <code>cd</code> into that directory, remove the Vagrantfile & then issue <code> vagrant init</code> command. This will create a .vagrant directory inside this parent directory & initialise vagrant.
 2. Copy back the Vagrantfile from this repository to your current directory. Then issue <code>vagrant up</code> command which will download the Ubuntu 14.04 basebox, start it & then call Chef script that will setup HAProxy alongwith NFS.
